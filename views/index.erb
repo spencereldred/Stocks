@@ -1,16 +1,23 @@
 <!-- Stock Quote View -->
-<div >
-  <% @quotes.each do |quote| %>
-     <div><span class="label">Company: </span>         <span class="value"><%= quote[:name] %></span></div>
-    <div><span class="label">Symbol: </span>              <span class="value"><%= quote[:symbol] %></span></div>
-    <div><span class="label">Date: </span>                  <span class="value"><%= quote[:date] %></span></div>
-    <div><span class="label">Time: </span>                 <span class="value"><%= quote[:time] %></span></div>
-    <div><span class="label">Last Trade: </span>         <span class="value">$<%= quote[:lastTrade] %></span></div>
-    <div><span class="label">Change: </span>             <span class="value">$<%= quote[:changePoints] %></span></div>
-    <div><span class="label">Open: </span>                  <span class="value">$<%= quote[:open] %></span></div>
-    <div><span class="label">High: </span>                  <span class="value">$<%= quote[:high] %></span></div>
-    <div><span class="label">Low: </span>                   <span class="value">$<%= quote[:low] %></span></div>
-    <div><span class="label">Volume: </span>             <span class="value"><%= quote[:volume] %></span></div>
-  <% end %>
-  <a href="/"><button>Next Symbol</button></a>
+<div>
+
+  <div id="details" >
+    <% @quotes.each do |quote| %>
+       <div><span class="label">Company: </span>         <span class="value"><%= quote[:name] %></span></div>
+      <div><span class="label">Symbol: </span>              <span class="value"><%= quote[:symbol] %></span></div>
+      <div><span class="label">Date: </span>                  <span class="value"><%= quote[:date] %></span></div>
+      <div><span class="label">Time: </span>                 <span class="value"><%= quote[:time] %></span></div>
+      <div><span class="label">Last Trade: </span>         <span class="value">$<%= quote[:lastTrade] %></span></div>
+      <div><span class="label">Change: </span>             <span class="value">$<%= quote[:changePoints] %></span></div>
+      <div><span class="label">Open: </span>                  <span class="value">$<%= quote[:open] %></span></div>
+      <div><span class="label">High: </span>                  <span class="value">$<%= quote[:high] %></span></div>
+      <div><span class="label">Low: </span>                   <span class="value">$<%= quote[:low] %></span></div>
+      <div><span class="label">Volume: </span>             <span class="value"><%= quote[:volume] %></span></div>
+    <% end %>
+  </div>
+  <div>
+    </br>
+    <a href="/"><button>Next Symbol</button></a>
+  </div>
+
 </div>
